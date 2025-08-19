@@ -10,9 +10,18 @@
 
     //ENTRADA
 
+    const palavra = prompt(`Digite uma palavra`);
+    const letra = prompt(`Digite a letra que deseja achar na palavra`);
 
     //PROCESSAMENTO
 
+    let procurando = palavra.lastIndexOf(letra);
+
+    if (procurando >= 0) {
+        alert(`A letra ${letra} aparece na posição ${procurando} pela primeira vez.`);
+    } else {
+        alert(`A letra que você está procurando não existe na palavra digitada`);
+    }
 
     //SAÍDA
 

@@ -10,10 +10,30 @@
 
     //ENTRADA
 
+    const remover = prompt(`Qual carro da seguinte lista você deseja remover: Tiggo, Sportage, Tucson, EcoSport`);
+;
 
     //PROCESSAMENTO
 
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let listanova = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+
+    alert(`A lista antiga se SUVs era ${carrosSUV.join(", ")}`);
+
+    if (remover === "Tiggo") {
+        listanova = ["Sportage", "Tucson", "EcoSport"];
+    } else if (remover === "Sportage") {
+        listanova = ["Tiggo", "Tucson", "EcoSport"];
+    } else if (remover === "Tucson") {
+        listanova = ["Tiggo", "Sportage", "EcoSport"];
+    } else if (remover === "EcoSport") {
+        listanova = ["Tiggo", "Sportage", "Tucson"];
+    } else {
+        alert(`${remover} não está na lista`);
+    }
 
     //SAÍDA
+
+    alert(`A nova lista de SUVs é ${listanova.join(", ")}`);
 
 </script>

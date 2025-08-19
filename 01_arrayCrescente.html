@@ -13,8 +13,16 @@
 
     //PROCESSAMENTO
 
-    Array.of(numero1, numero2);
+    let arrayVazio = [];
+    if (numero1 > numero2) {
+        arrayVazio = [numero2, numero1];
+    }else {
+        arrayVazio = [numero1, numero2];
+    }
+    
 
     //SAÍDA
+
+    alert(`Os números em ordem crescente ficam ${arrayVazio.join(" - ")}`);
 
 </script>
